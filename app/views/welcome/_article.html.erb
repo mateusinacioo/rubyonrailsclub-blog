@@ -2,5 +2,8 @@
   <p>
     <strong>Title:</strong>
     <%= article.title %>
+    <strong>Data:</strong>
+    <%# Adicionado i18n e formato da data e hora pt-BR %>
+    <%= l(article.created_at, format: :only_date) %>
   </p>
 </div>
