@@ -64,7 +64,7 @@ module Administrate
     end
 
     def destroy_cover_image
-      @article = Article.friendly.find(params[:id])
+      @article.cover_image.purge
 
       respond_to do |format|
         format.turbo_stream { render(turbo_stream: turbo_stream.remove(@article)) }
