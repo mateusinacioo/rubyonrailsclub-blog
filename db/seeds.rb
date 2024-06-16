@@ -20,4 +20,3 @@ admins.each do |email|
     password_confirmation: ENV["DEFAULT_PASSWORD"],
   )
 end
-

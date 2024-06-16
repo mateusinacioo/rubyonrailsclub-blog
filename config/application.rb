@@ -41,7 +41,7 @@ module RubyonrailsclubBlog
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    #I18n
+    # I18n
     config.i18n.default_locale = :"pt-BR"
 
     # Active storage
