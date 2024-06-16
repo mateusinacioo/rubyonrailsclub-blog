@@ -2,6 +2,6 @@
 
 class WelcomeController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.all.limit(6)
   end
 end
