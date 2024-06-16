@@ -1,24 +1,30 @@
-# README
+# Projeto: Blog Ruby on Rails Club
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto criado para adicionar artigos, imagens e separado por categorias.
 
-Things you may want to cover:
+## Funcionalidades
+1. Autenticação de usuário;
+2. Criar novo post;
+3. Editar post;
+4. Adicionar imagens;
 
-* Ruby version
+## Dependências
+* Ruby 3.3.0
+* Rails 7.1.3.3
+* Postgres
 
-* System dependencies
+## Inicialização
+* `git@github.com:mateusinacioo/rubyonrailsclub-blog.git`
+* `cd rubyonrailsclub-blog`
+* `bundle install`
+* `rails dev:reset`
+* Executar com: `rails s`
+* Abrir no link: `http://localhost:3000/`
 
-* Configuration
+## Status
+* Projeto em andamento
+  
+![sand-8826_256](https://github.com/mateusinacioo/rubyonrailsclub-blog/assets/80658605/735ef2e6-8e4b-4d99-be8a-d9085e7e1d8c)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Créditos
+Projeto em desenvolvimento no curso de Ruby on Rails 7.x realizado por Jakson Pires
