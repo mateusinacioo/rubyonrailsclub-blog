@@ -1,7 +1,7 @@
-module Administrate
-    class DashboardsController < AdministrateController
-      
+# frozen_string_literal: true
 
-      def index; end
-    end
+module Administrate
+  class DashboardsController < AdministrateController
+    def index; end
+  end
 end

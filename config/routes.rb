@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   namespace :administrate do
     get "/" => "dashboards#index"
   end
-  
+
   namespace :administrate do
     resources :articles do
       member do
