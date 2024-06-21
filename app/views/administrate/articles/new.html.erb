@@ -4,12 +4,12 @@
 			<h2 class="admin-subtitle">Cadastro de artigo</h2>
 			<div class="buttons">
 				<a href="#" class="button small" onclick="document.forms['article-form'].submit()">
-          <%= image_tag "icons/white/save.svg", alt: "save"%>
+          			<%= image_tag "icons/white/save.svg", alt: "save"%>
 					Salvar artigos
 				</a>
 			</div>
 		</div>
   
-  <%= render "form", article: @article %>
+  <%= render "form", article: @article, action: :new %>
   
   </div>
