@@ -43,7 +43,7 @@ module Administrate
     def update
       respond_to do |format|
         if @article.update(article_params)
-          format.html { redirect_to(administrate_articles_url(@article), notice: "Artigo atualizado com sucesso!") }
+          format.html { redirect_to(administrate_article_url(@article), notice: "Artigo atualizado com sucesso!") }
           format.json { render(:show, status: :ok, location: @article) }
         else
           format.html { render(:edit, status: :unprocessable_entity) }
