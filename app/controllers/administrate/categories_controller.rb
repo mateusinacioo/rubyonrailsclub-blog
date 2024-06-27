@@ -23,7 +23,7 @@ module Administrate
     def edit
     end
 
-          # POST /cetegories or /cetegories.json
+    # POST /cetegories or /cetegories.json
     def create
       @category = Category.new(category_params)
 
@@ -57,31 +57,31 @@ module Administrate
         format.html do
           if @category.articles.count > 0
             redirect_to(
-            administrate_categories_url, 
-            alert: "Existem Artigos associados a essa categoria! Não é possível apagá-la!",
-          ) 
-        else
-          @category.destroy!
-          redirect_to(administrate_categories_url, alert: "Categoria apagada com sucesso!") 
+              administrate_categories_url,
+              alert: "Existem Artigos associados a essa categoria! Não é possível apagá-la!",
+            )
+          else
+            @category.destroy!
+            redirect_to(administrate_categories_url, alert: "Categoria apagada com sucesso!")
           end
         end
         format.json { head(:no_content) }
       end
     end
 
-  def destroy_cover_image
-    @category.cover_image.purge
+    def destroy_cover_image
+      @category.cover_image.purge
 
-    respond_to do |format|
-      format.turbo_stream { render(turbo_stream: turbo_stream.remove(@category)) }
+      respond_to do |format|
+        format.turbo_stream { render(turbo_stream: turbo_stream.remove(@category)) }
+      end
     end
-  end
 
-  private
+    private
 
-  def set_categories
-    @categories = Category.all
-  end
+    def set_categories
+      @categories = Category.all
+    end
 
     # Use callbacks to share common setup or constraints between actions.
     def set_category
