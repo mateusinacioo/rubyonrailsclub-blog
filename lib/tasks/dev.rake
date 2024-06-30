@@ -35,14 +35,21 @@ namespace :dev do
 
   def add_authors
     5.times do
-      Author.create!(
+      author = Author.create!(
         name: Faker::Name.name,
-        description: Faker::Lorem.paragraph(sentence_count: rand(5..10)),
+        description: Faker::Lorem.paragraph(sentence_count: rand(15..30)),
         facebook_profile_url: Faker::Internet.url(host: "facebook.com"),
         instagram_profile_url: Faker::Internet.url(host: "instagram.com"),
         twitter_profile_url: Faker::Internet.url(host: "twitter.com"),
         linkedin_profile_url: Faker::Internet.url(host: "linkdin.com"),
         youtube_profile_url: Faker::Internet.url(host: "youtube.com"),
+      )
+
+      image_id = rand(1..5)
+
+      author.avatar_image.attach(
+        io: File.open(Rails.root.join("lib/tasks/images/avatar-#{image_id}.png")),
+        filename: "author_avatar_#{image_id}.png",
       )
     end
   end
