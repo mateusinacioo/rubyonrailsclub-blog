@@ -5,25 +5,25 @@ module Administrate
     before_action :set_category, only: [:show, :edit, :update, :destroy]
     #   before_action :set_categories, only: [:edit, :new, :show]
 
-    # GET /cetegories or /cetegories.json
+    # GET /categories or /categories.json
     def index
       @categories = Category.all
     end
 
-    # GET /cetegories/1 or /cetegories/1.json
+    # GET /categories/1 or /categories/1.json
     def show
     end
 
-    # GET /cetegories/new
+    # GET /categories/new
     def new
       @category = Category.new
     end
 
-    # GET /cetegories/1/edit
+    # GET /categories/1/edit
     def edit
     end
 
-    # POST /cetegories or /cetegories.json
+    # POST /categories or /categories.json
     def create
       @category = Category.new(category_params)
 
@@ -38,7 +38,7 @@ module Administrate
       end
     end
 
-    # PATCH/PUT /cetegories/1 or /cetegories/1.json
+    # PATCH/PUT /categories/1 or /categories/1.json
     def update
       respond_to do |format|
         if @category.update(category_params)
@@ -51,7 +51,7 @@ module Administrate
       end
     end
 
-    # DELETE /cetegories/1 or /cetegories/1.json
+    # DELETE /categories/1 or /categories/1.json
     def destroy
       respond_to do |format|
         format.html do
