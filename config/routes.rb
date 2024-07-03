@@ -18,8 +18,8 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :authors do 
-      member do 
+    resources :authors do
+      member do
         delete :destroy_avatar_image
       end
     end
