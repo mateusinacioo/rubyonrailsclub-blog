@@ -16,27 +16,27 @@ namespace :dev do
 
   desc "Add categories to the database"
   task add_categories: :environment do
-    show_spinner("Adding categories yo the database") { add_categories }
+    show_spinner("Adding categories to the database") { add_categories }
   end
 
   desc "Add authors to the database"
   task add_authors: :environment do
-    show_spinner("Adding authors yo the database") { add_authors }
+    show_spinner("Adding authors to the database") { add_authors }
   end
 
   desc "Add articles to the database"
   task add_articles: :environment do
-    show_spinner("Adding articles yo the database") { add_articles }
+    show_spinner("Adding articles to the database") { add_articles }
   end
 
   desc "Add users to the database"
   task add_users: :environment do
-    show_spinner("Adding users yo the database") { add_users }
+    show_spinner("Adding users to the database") { add_users }
   end
 
   desc "Add comments to the database"
   task add_comments: :environment do
-    show_spinner("Adding comments yo the database") { add_comments }
+    show_spinner("Adding comments to the database") { add_comments }
   end
 
   def add_categories
