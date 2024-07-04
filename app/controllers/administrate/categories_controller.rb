@@ -78,14 +78,6 @@ module Administrate
       end
     end
 
-    def destroy_cover_image
-      @category.cover_image.purge
-
-      respond_to do |format|
-        format.turbo_stream { render(turbo_stream: turbo_stream.remove(@category)) }
-      end
-    end
-
     private
 
     def set_categories

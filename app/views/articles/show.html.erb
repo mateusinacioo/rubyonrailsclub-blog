@@ -122,10 +122,13 @@
                                     <div class="avatar">
                                         <%= image_tag "avatar/man-1.svg" %>
                                     </div>
-                                    <div class="name"><%= comment.user.email %></div>
+                                    <div class="name"><%= comment.user.email.split("@").first %></div>
+                                    <!--<div class="name"><%= truncate(comment.user.email, length: 17) %></div>
+                                    Duas opções de diminuir o tamanho do nome do usuário, nesse exemplo o mais apropriado é o split
+                                    -->
                                 </div>
                                 <div>
-                                    <div class="date">30min atrás</div>
+                                    <div class="date"><%= time_ago_in_words(comment.created_at) %></div>
                                 </div>
                             </div>
                             <div class="description-row">
