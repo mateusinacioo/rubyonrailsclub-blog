@@ -24,3 +24,10 @@ admins.each do |email, name|
     password_confirmation: ENV["DEFAULT_PASSWORD"],
   )
 end
+
+#=======================
+# Create default user
+User.find_or_create_by(email: "user@user.com") do |user|
+  user.password = ENV["DEFAULT_PASSWORD"]
+  user.password_confirmation = ENV["DEFAULT_PASSWORD"]
+end
