@@ -31,3 +31,11 @@ pt-BR:
         author_id: Autor
         created_at: Criado em
         updated_at: Atualizado em
+      author:
+        name: Nome
+        description: Descrição
+        facebook_profile_url: URL do perfil Facebook
+        instagram_profile_url: URL do perfil Instagram
+        twitter_profile_url: URL do perfil Twitter
+        linkedin_profile_url: URL do perfil Linkedin
+        youtube_profile_url: URL do canal YouTube
