@@ -1,0 +1,11 @@
+Categoria,Descrição
+MVC,Representa a estrutura de dados da aplicação (Model), a apresentação da interface do usuário (View), e a lógica de controle da aplicação (Controller).
+Active Record,Trabalha com associações entre modelos, validações de dados e callbacks do ciclo de vida dos objetos.
+Routing,Gerencia as rotas da aplicação, incluindo rotas baseadas em recursos e rotas personalizadas.
+Migrations,Permite criar e modificar a estrutura do banco de dados, como tabelas e colunas.
+Helpers,Fornece métodos auxiliares para as views, incluindo helpers padrão e personalizados.
+Asset Pipeline,Gerencia assets como arquivos CSS, JavaScript e imagens.
+Testing,Inclui testes unitários, funcionais e de integração para garantir a qualidade do código.
+Background Jobs,Gerencia tarefas em segundo plano usando Active Job e filas.
+Security,Envolve autenticação de usuários, autorização de ações e proteção contra CSRF.
+Internationalization (i18n),Trabalha com tradução e localização da aplicação usando arquivos de tradução e métodos de tradução.
