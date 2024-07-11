@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :admins
   get "welcome/index"
   get "articles/all", to: "articles#all", as: "all_articles"
-  get "categories/all_categories", to: "categories#all_categories", as: "all_categories"
+  get "categories", to: "categories#all_categories", as: "all_categories"
 
   resources :articles, only: [:show] do
     resources :comments do
