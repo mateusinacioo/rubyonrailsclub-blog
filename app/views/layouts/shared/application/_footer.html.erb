@@ -5,8 +5,8 @@
           <div class="box-title">Páginas</div>
           <div class="list-container">
             <ul>
-              <li><%= link_to "Início", root_path%></li>
-              <li><a href="#">Categorias</a></li>
+              <li><%= link_to "Início", root_path %></li>
+              <li><%= link_to "Categorias", all_categories_path %></li>
               <li><a href="#">Cursos</a></li>
               <li><a href="#">Contato</a></li>
             </ul>
@@ -17,12 +17,12 @@
           <div class="list-container">
             <ul>
               <% @footer_categories_1.each do |category| %>
-                <li><a href="#"><%= category.name %></a></li>
+                <li><%= link_to category.name, category_articles_path(id: category.id), class: "item" %></li>
               <% end %>
             </ul>
             <ul>
               <% @footer_categories_2.each do |category| %>
-                <li><a href="#"><%= category.name %></a></li>
+                <li><%= link_to category.name, category_articles_path(id: category.id), class: "item" %></li>
               <% end %>
             </ul>
           </div>
