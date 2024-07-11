@@ -17,14 +17,14 @@ Projeto criado para adicionar artigos, imagens e separado por categorias.
 * `git@github.com:mateusinacioo/rubyonrailsclub-blog.git`
 * `cd rubyonrailsclub-blog`
 * `bundle install`
+* `rails db:create db:migrate`
 * `rails dev:reset`
 * Executar com: `rails s`
 * Abrir no link: `http://localhost:3000/`
 
 ## Status
-* Projeto em andamento
-  
-![sand-8826_256](https://github.com/mateusinacioo/rubyonrailsclub-blog/assets/80658605/735ef2e6-8e4b-4d99-be8a-d9085e7e1d8c)
+* Projeto do curso concluído
+* Realizando algumas melhorias e desenvolvendo novas funcionalidades
 
 ## Créditos
 Projeto em desenvolvimento no curso de Ruby on Rails 7.x realizado por Jakson Pires
