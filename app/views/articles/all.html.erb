@@ -1,0 +1,18 @@
+<section class="section posts-grid-section">
+  <div class="container">
+    <div class="title-container">
+      <h2 class="title">Todos os Artigos</h2>
+    </div>
+    
+    <div class="grid" id="postGridAll">
+      <% @articles.each do |article| %>
+        <%= render partial: "welcome/article", locals: { article: article } %>
+      <% end %>
+    </div>
+  
+  </div>
+  <div class="grid-mobile">
+    <div class="bullets" id="postGridAllBullets"></div>
+    <div><a href="#" class="button clean">ver mais</a></div>
+  </div>
+</section>

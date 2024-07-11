@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   devise_for :admins
   get "welcome/index"
+  get "articles/all", to: "articles#all", as: "all_articles"
 
   resources :articles, only: [:show] do
     resources :comments do
