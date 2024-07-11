@@ -4,11 +4,17 @@
       <h2 class="title">Artigos na Categoria:  <%= @category.name %></h2>
     </div>
     
+    <% if @articles.present? %>
     <div class="grid" id="postGridAll">
       <% @articles.each do |article| %>
         <%= render partial: "welcome/article", locals: { article: article } %>
       <% end %>
     </div>
+    <% else %>
+    <div class="grid" id="postGridAll">
+      <p>Não existem artigos para esta categoria.</p>
+    </div>
+    <% end %>
   
   </div>
   <div class="grid-mobile">

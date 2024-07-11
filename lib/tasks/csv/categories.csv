@@ -9,3 +9,4 @@ Testing,Inclui testes unitários, funcionais e de integração para garantir a q
 Background Jobs,Gerencia tarefas em segundo plano usando Active Job e filas.
 Security,Envolve autenticação de usuários, autorização de ações e proteção contra CSRF.
 Internationalization (i18n),Trabalha com tradução e localização da aplicação usando arquivos de tradução e métodos de tradução.
+Controller, Um controller pode então ser pensado como um intermediário entre um model e uma view
