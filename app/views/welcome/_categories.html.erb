@@ -5,13 +5,17 @@
         <%= link_to 'Ver todos', all_categories_path, class: 'button' %>
       </div>
       <div class="grid">
-        <% @categories.each do |category|%>
-          <a href="#" class="item">
+       <% @categories.each do |category|%>
+          <%= link_to category_articles_path(id: category.id), class: "item" do %>
             <%= image_tag category.cover_image, alt: "Categoria", class: "item-image" %>
             <div class="item-title"><%= category.name %></div>
             <p class="item-description"><%= category.description %></p>
-          </a>
+          <% end %>
         <% end %>
       </div>
     </div>
 </section>
+
+
+
+ 

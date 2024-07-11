@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get "categories/:id/articles", to: "articles#article_by_category", as: "category_articles"
   resources :articles
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

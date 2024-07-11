@@ -6,6 +6,16 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
   
+  def article_by_category
+    @category = Category.find(params[:id])
+    if @category
+      @articles = @category.articles
+    else
+      @articles = []
+      flash[:alert] = "Categoria não encontrada"
+    end
+  end
+
   def show
     @article = Article.includes(:category, :author, comments: :user).friendly.find(params[:id])
     @other_articles = Article.all.sample(3)
